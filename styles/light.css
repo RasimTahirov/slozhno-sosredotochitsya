@@ -8,77 +8,36 @@
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя */
-    .title {
-      color: var(--title-color);
-    }
-  
-    .caption {
-      background-color: var(--bg-short-title);
-      color: var(--caption-color);
-    }
-  
-    .heading {
-      color: var(--heading-color);
-    }
-  
-    .short__title {
-      background-color: var(--bg-short-title);
-    }
-  
-    .headline {
-      background-color: var(--bg-short-title);
-    }
-  
-    .paragraph {
-      color: var(--paragraph-color);
-    }
-
-    .header__theme-menu {
-      color: var(--nav-color);
-    }
-}
-
-@media (prefers-color-scheme) {
-  .page.theme_light {
-    background-image: url(../images/cover-image-light.png);
+  :root .theme_light {
+    --border-color: rgb(21%, 20%, 19%, 0.5);
+    --title-color: #ffc2e6;
+    --caption-color: #353430;
+    --paragraph-color: #353430;
+    --heading-color: #353430;
+    --bg-short-title: #ff8dcb;
+    --accent-color: #ff8dcb;
+    --nav-color: #353430;
+    --bg-img: url(../images/cover-image-light.png);
   }
 
-  .title__footer {
-    text-shadow: 2px 2px 0px #FF0070;
+  .decoration,
+  .decoration-zone,
+  .decoration-zone__lower {
+    display: none;
   }
-}
-
-@media (width <= 1024px) and (prefers-color-scheme: light) {
-  .page.theme_light {
-    .title {
-      text-shadow: 4px 4px 0 #FF8DCB;
-    }
-
-    .title__footer {
-      text-shadow: 2px 2px 0px #FF0070;
-    }
-  }
-}
-
-:root .theme_light{
-  --title-color: #FFC2E6;
-  --caption-color: #353430;
-  --paragraph-color: #353430;
-  --bg-short-title: #FF8DCB;
-  --accent-color: #FF0070;
-  --heading-color: #353430;
-  --nav-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
   :root .theme_light {
-        /* Дублируем переменные светлой темы */
-  --title-color: #FFC2E6;
-  --caption-color: #353430;
-  --paragraph-color: #353430;
-  --bg-short-title: #FF8DCB;
-  --accent-color: #FF0070;
-  --heading-color: #353430;
-  --nav-color: #353430;
-    }
+    /* Дублируем переменные светлой темы */
+    --border-color: rgb(21%, 20%, 19%, 0.5);
+    --title-color: #ffc2e6;
+    --caption-color: #353430;
+    --paragraph-color: #353430;
+    --heading-color: #353430;
+    --bg-short-title: #ff8dcb;
+    --accent-color: #ff8dcb;
+    --nav-color: #353430;
+    --bg-img: url(../images/cover-image-light.png);
+  }
 }
