@@ -13,6 +13,6 @@
   --accent-color: #ff0070;
   --nav-color: #ff0070;
   --bg-img: url(../images/cover-image-dark.png);
-  --main-font: "IBM Plex mono", monospace;
+  --main-font: "IBM Plex mono";
   --decoration: #ff0070;
 }
